@@ -1,0 +1,55 @@
+Q.1)List 5 difference between Browser JS(console) v Nodejs.
+
+->1)1.Browser.js is mainly used for client-side applications like validations on a web page or dynamic page display and as the name suggests it gets executed in the browser only
+while in the case of Node.js javascript code gets executed outside the browser as it is an interpreter as well as an environment for running javascript and used for server-side applications.
+
+2.Browser.js is used for frontend while Node.js is used for backend applications.
+
+3.Node.js has full system access i.e can read and write directly to the file system like any other application that also concludes that we can write complete software using Node.js while Browser.js is sandboxed for the safety purposes and have access limited to the browser. 
+
+4. DOM manipulation related API like document.getElementById(), document.createElement(), etc will not available in Node.JS because Node.JS is server side technology and we don't need HTML DOM related thing in server side.
+API to create HTTP & TCP server: http.createServer() and net.createServer will not be available in Browser because we don't create a server in the browser.
+
+5.Node.js has built-in libraries for HTTP and socket communication with which it can create a web server and thus be a replacement for other types of servers such as. Apache or Nginx
+Node.js does not have browser APIs related to DOM, CSS, performance, document, as well as all APIs associated with the "window" object. Precisely because of the lack of a window object, the global object was renamed "global".
+
+Q.3)To read - https://stackoverflow.com/questions/5641997/is-it-necessary-to-write-head-body-and-html-tags
+->
+1)An html element's start tag may be omitted if the first thing inside the html element is not a comment.
+
+2)An html element's end tag may be omitted if the html element is not immediately followed by a comment.
+
+3)A head element's start tag may be omitted if the element is empty, or if the first thing inside the head element is an element.
+
+4)A head element's end tag may be omitted if the head element is not immediately followed by a space character or a comment.
+
+5)A body element's start tag may be omitted if the element is empty, or if the first thing inside the body element is not a space character or a comment, except if the first thing inside the body element is a script or style element.
+
+6)A body element's end tag may be omitted if the body element is not immediately followed by a comment.
+
+Q.4)Execute the below code and write your description in txt file
+typeof(1) - Number
+typeof(1.1) - Number
+typeof('1.1') - String
+typeof(true) - Boolean
+typeof(null) - Object
+typeof(undefined) - undefined
+typeof([]) - Array
+typeof({}) - Object
+typeof(NaN) - Number
+
+Q.5)Read what is prototype
+1)Prototypes are the mechanism by which JavaScript objects inherit features from one another.
+2)JavaScript is often described as a prototype-based language — to provide inheritance, objects can have a prototype object, which acts as a template object that it inherits methods and properties from.
+3)Every constructor function has a prototype property whose value is an object containing a constructor property. This constructor property points to the original constructor function.
+
+
+
+
+
+
+
+
+
+
+
