@@ -1,0 +1,106 @@
+Q.1)For the given JSON iterate over all for loops (for, for in, for of, forEach)
+
+for loop;-
+var obj = [
+{ name: "Ruchika", age: "23", company: "HiddenBrains" },
+{ name: "Snehal", age: "22", company: "GUVI" },
+{ name: "Damini", age: "20", company: "Cognizant" }
+]
+for(let i =0;i<obj.length;i++)
+{
+console.log(obj[i]);
+}
+for of loop:-
+var obj = [
+{ name: "Ruchika", age: "23", company: "HiddenBrains" },
+{ name: "Snehal", age: "22", company: "GUVI" },
+{ name: "Damini", age: "20", company: "Cognizant" }
+]
+]
+for(var prop of obj)
+{
+console.log(prop);
+}
+for in loop:-
+var obj = [
+{ name: "Ruchika", age: "23", company: "HiddenBrains" },
+{ name: "Snehal", age: "22", company: "GUVI" },
+{ name: "Damini", age: "20", company: "Cognizant" }
+]
+for(var prop in obj)
+{
+console.log(obj[prop]);
+}
+for each loop:-
+var obj = [
+{ name: "Ruchika", age: "23", company: "HiddenBrains" },
+{ name: "Snehal", age: "22", company: "GUVI" },
+{ name: "Damini", age: "20", company: "Cognizant" }
+]
+obj.forEach(key => console.log(key));
+
+Q.2)Create your own resume data in JSON format
+
+var resume = {
+  "basics": {
+    "name": "Ruchika Bharati",
+    "email": "ruchikabharaticdac@gmail.com",
+    "phone": "9876567898",
+    "degree": "B.E.Computer",
+    "location": {
+      "address": "Vidut vihar colany,ghulewadi road,Sangamner",
+      "city": "Sangamner",
+      "countryCode": "IN",
+      "region": "Maharashtra"
+    }
+   },
+  "work": {
+      "company": "Hiddenbrains Infotech pvt. ltd.",
+      "position": "PHP Developer",
+      "startDate": "2020-11-19",
+      "endDate": "2021-03-31,
+    },
+  
+ "education": {
+      "institution": "Amrutvahini College of Engineering,Sangamner",
+      "area": "Sangamner,Maharashtra",
+      "studyType": "B.E.",
+      "startDate": "2015-03-12",
+      "endDate": "2019-01-10",
+      "gpa": "6.54",
+      "courses": [
+        "CDAC","Advance Java"
+      ]
+    },
+  "skills": {
+      "name": ["Java","CPP","PHP",
+      "level": "intermediate",
+   },
+  "languages": {
+      "language": ["Marathi","Eglish","Hindi"]
+      "fluency": "Fluent"
+    },
+  "interests": 
+    {
+      "name": "Sports",
+      "keywords": [
+         'Cricket', 'Football', 'Golf'
+      ]
+    }
+  
+}
+
+Q.Read about the difference between window, screen and document in javascript
+
+1)Window is the main JavaScript object root, aka the global object in a browser, and it can also be treated as the root of the document object model. You can access it as window.
+window.screen or just screen is a small information object about physical screen dimensions.
+window.document or just document is the main object of the potentially visible (or better yet: rendered) document object model/DOM.
+
+2)window is the execution context and global object for that context's JavaScript.
+document contains the DOM, initialized by parsing HTML.
+screen describes the physical display's full screen.
+
+3)The window is the actual global object.
+The screen is the screen, it contains properties about the user's display.
+The document is where the DOM is.
+
